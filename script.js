@@ -9,11 +9,11 @@ document.getElementById("votingForm").addEventListener('submit',(e)=>{
 		let promise=new Promise((resolve,reject)=>{
 			if(parseInt(age)>18){
 				setTimeout(()=>{
-					resolve("Welcome,John. You can vote.");
+					resolve(`Welcome,${name}. You can vote.`);
 				},4000)
 			}else{
 				setTimeout(()=>{
-					reject("Oh sorry Doe. You aren't old enough.");
+					reject(`Oh sorry ${name}. You aren't old enough.`);
 				},4000)
 			}
 		});
