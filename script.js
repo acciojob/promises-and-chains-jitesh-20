@@ -9,7 +9,7 @@ document.getElementById("votingForm").addEventListener('submit',(e)=>{
 		let promise=new Promise((resolve,reject)=>{
 			if(parseInt(age)>18){
 				setTimeout(()=>{
-					resolve(`Welcome,${name}. You can vote.`);
+					resolve(`Welcome, ${name}. You can vote.`);
 				},4000)
 			}else{
 				setTimeout(()=>{
